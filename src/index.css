@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+    color: #f3f4f6; /* text-gray-100 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Custom scrollbar for a more modern feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937; /* bg-gray-800 */
+}
+::-webkit-scrollbar-thumb {
+    background: #4f46e5; /* bg-indigo-600 */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1; /* bg-indigo-500 */
+}
+
+/* Simple animation for section headers */
+.section-header {
+    transition: all 0.3s ease-in-out;
+}
+.section-header:hover {
+    letter-spacing: 1px;
+    color: #818cf8; /* text-indigo-400 */
+}
